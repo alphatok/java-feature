@@ -2,22 +2,22 @@ package com.brzyang.innerclz;
 
 import java.util.Set;
 
-public class OuterOfInnerClassTest {
+public class OuterOfInnerClass {
     public Set<Integer>  m;
 
     @Override
     public String toString() {
-        return "OuterOfInnerClassTest{" +
+        return "OuterOfInnerClass{" +
                 "m=" + m +
                 '}';
     }
 
-    public static final class InnerOfInnerClassTest {
+    public static final class InnerOfInnerClass {
         private Integer val;
 
         @Override
         public String toString() {
-            return "InnerOfInnerClassTest{" +
+            return "InnerOfInnerClass{" +
                     "val=" + val +
                     '}';
         }
