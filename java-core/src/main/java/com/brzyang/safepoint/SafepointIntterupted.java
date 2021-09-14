@@ -56,7 +56,7 @@ public class SafepointIntterupted {
         //这时候 algorithm 里面的for循环调用次数应该足够了，会发生代码即时编译优化并 OSR
         t = new Thread(task);
         t.start();
-        Thread.sleep(100000);
+        Thread.sleep(1000);
         //发现线程这次不会对 interrupt 有反应了( JIT OSR替换）
         t.interrupt();
     }
